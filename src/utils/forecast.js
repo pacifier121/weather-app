@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const forecast = (lattitude, longitude, callback) => {
-    const url = "https://cors-anywhere.herokuapp.com/http://api.weatherstack.com/current?access_key=6d8ef9f3cbe759185b3a12e6f2a6b9f2&query=" + lattitude + "," + longitude;
+    const url = "http://api.weatherstack.com/current?access_key=6d8ef9f3cbe759185b3a12e6f2a6b9f2&query=" + lattitude + "," + longitude;
     request({ url, json: true }, (error, { body }) => {
         if (error) {
             callback("Unable to connect to the weather services", undefined);

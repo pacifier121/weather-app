@@ -1,7 +1,7 @@
 document.querySelector('form').addEventListener('submit', (eve) => {
     eve.preventDefault();
     const place = document.querySelector("input").value;
-    let url = "http://localhost:3000/weather?city=" + place;
+    let url = "/weather?city=" + place;
     document.querySelector('#msg-1').innerHTML = "<h5>Loading... </h5>";
     document.querySelector('#msg-2').innerHTML = "";
     document.querySelector('#msg-3').innerHTML = "";
