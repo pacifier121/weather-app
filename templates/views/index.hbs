@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{> head}}
+   </head>
+<body>
+    <nav class="navbar navbar-expand-lg top bg-dark text-white">
+        <div class="container">
+            <ul class="navbar-nav mt-3 mb-3 h3">
+                <a href="/" style="color : white;">
+                <li class="nav-item mr-5">Home</li>
+                </a>
+                <a href="/about" style="color : white;">
+                <li class="nav-item mr-5">About</li>
+                </a>
+                <li class="nav-item mr-5">Contact</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+
+    {{> header}}
+
+    <form class="form-group">
+        <input type="text" class="form-control mt-3" name="" id="inputPlaceName" placeholder="Location">
+        <button type="submit" class="btn btn-dark mt-3">Search</button>
+    </form>
+
+        <p id="msg-1"></p>
+        <p id="msg-2"></p>
+    </div>
+
+    <script src="./js/events.js"></script>
+</body>
+</html>
