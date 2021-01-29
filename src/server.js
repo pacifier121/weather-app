@@ -52,11 +52,7 @@ app.get("/weather", (req, res) => {
                     error: error
                 });
             }
-            res.send({
-                forecast: forecastData,
-                lattitude: data.lattitude,
-                longitude: data.longitude
-            });
+            res.send(forecastData);
         });
     });
 });

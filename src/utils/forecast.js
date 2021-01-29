@@ -9,12 +9,16 @@ const forecast = (lattitude, longitude, callback) => {
             callback("Invalid location", undefined);
         } else {
             const data = {
+                lattitude: lattitude,
+                longitude: longitude,
                 place_name: body.location.name + ", " + body.location.region,
                 temperature: body.current.temperature,
-                weather: body.current.weather_descriptions[0]
+                weather: body.current.weather_descriptions[0],
+                humidity: body.current.humidity,
+                weather_icon: body.current.weather_icons[0],
+                localtime: body.location.localtime
             }
-            let weatherInfo = "In " + data.place_name + ", it is currently " + data.temperature + "°C and " + data.weather;
-            callback(error, weatherInfo)
+            callback(error, data)
         }
     })
 }

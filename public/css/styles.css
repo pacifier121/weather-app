@@ -1,3 +1,53 @@
-h1 {
+html {
+    --color-section-bgcolor: #30475e;
+    --color-section-fgcolor: #fff;
+    --feature-font: #9d65c9;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.color-section {
+    background-color: var(--color-section-bgcolor);
+    color: var(--color-section-fgcolor);
+}
+
+.featuretext {
     color: gray;
+}
+
+.featuretext-light {
+    color: lightgray;
+}
+
+footer {
+    padding: 7% 7% 2%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-note {
+    font-size: 0.7rem;
+    color: lightgray;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.social-icon:hover {
+    transform: scale(2);
+}
+
+h4 {
+    font-weight: bolder;
 }
